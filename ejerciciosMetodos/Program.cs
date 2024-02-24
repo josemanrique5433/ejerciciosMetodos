@@ -1,16 +1,17 @@
-﻿class Program
+﻿using System;
+
+class Program
 {
     static void Main(string[] args)
     {
-        sumaNumeros(7, 9);    
 
+        Console.WriteLine(suma(7,5.3));
     }
-    
-    static void sumaNumeros(int num1,int num2)
-    {
 
-        Console.WriteLine($"La suma de los números es: {num1+num2}");
+     static int suma(int operador1, int operador2)=>operador1 + operador2;
 
-    }
-    
+     static int suma(int numero1, double numero2) => numero1;
+     static int suma(int numero1, int numero2, int numero3,int numero4) => numero1 + numero2+numero3+numero4;
+
+
 }
